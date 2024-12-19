@@ -50,7 +50,6 @@ public class ContactServiceImpl implements ContactService {
     }
     /**Данные по контактам и клиентам выдаются в виде мапы (клиент - список его контактов**/
 
-
     @Override
     public Map<ClientDTO, List<ContactShortDTO>> getOneTypeContacts(Long clientId, Integer typeId) {
         ClientEntity client = clientRepository.findById(clientId).orElseThrow(()->new NotFoundException("Клиент не найден"));
