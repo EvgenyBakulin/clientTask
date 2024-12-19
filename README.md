@@ -1,3 +1,7 @@
+### База данных PostgreSQL через PgAdmin
+ url   jdbc:postgresql://localhost:5432/clientDb
+ username BakulinE
+ password 1234
 ### Создание типа контакта для работы со связкой клинент-контакты:
 curl --request POST - sL  \
      --headers  "Content-type: application/json; 
